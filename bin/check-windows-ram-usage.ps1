@@ -1,4 +1,4 @@
-$Memoryuse = (get-counter -counter "\Memory\% committed bytes in use").CounterSamples[0].CookedValue)
+$Memoryuse = ((get-counter -counter "\Memory\% committed bytes in use").CounterSamples[0].CookedValue)
 $MemoryPencent = $Memoryuse
 $MemoryDisplay = $Memoryuse.ToString("0.00")
 
