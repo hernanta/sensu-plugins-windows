@@ -7,7 +7,7 @@ $warn = 70
 
 if ($MemoryPencent -gt $critical)
     {
-      Write-Output -InputObject "RAM usage is over 90%: $MemoryDisplay%"  
+      Write-Output -InputObject "RAM usage is over 90%: $MemoryDisplay%"
       exit 2
     }
     elseif ($MemoryPencent -ge $warn)
@@ -15,8 +15,8 @@ if ($MemoryPencent -gt $critical)
         Write-Output -InputObject "RAM usage is over 70%: $MemoryDisplay%"
         exit 1
     }
-    else 
-    {  
+    else
+    {
         Write-Output -InputObject "RAM is normal: $MemoryDisplay%"
         exit 0
-    } 
+    }
